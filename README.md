@@ -4,6 +4,8 @@ This is a website design for a fictional hair salon. I have used html, CSS, boot
 
 ![Home page]( https://github.com/josmyJJ/Salon_Website/blob/master/images/img_screenshot_1.png?raw=true)
 
+Link to the website - https://peaceful-woodland-86031.herokuapp.com/
+
 
 
 
