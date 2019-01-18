@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #555;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(43, 51, 62);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*text*/
+
+h1 {
+    font-family: 'Cinzel', serif;
+    margin: 0 0 1em 0;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    margin: 0 0 1em 0;
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-align: center;
+}
+
+h3 {
+    margin: 0 0 .5em 0;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+h4 {
+    margin: 0 0 1.5em 0;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+p {
+    margin: 0 0 1em 0;
+    line-height: 1.5em;
+}
+
+a {
+    color: #007eff;
+}
+
+a:visited {
+    color: #65b4ff;
+}
+
+/*header*/
+
+header {
+    height: 450px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner.jpg) no-repeat left center;
+    background-size: 100% cover;
+    position: relative;
+}
+
+header a.logo {
+    background: url(../images/web_logo.png) no-repeat 0 0;
+    position: fixed;
+    display: block;
+    width: 160px;
+    height: 66px;
+    background-size: contain;
+    top: 0px;
+    left: 20px;
+    z-index: 2;
+}
+
+header a.logo span {
+    display: none;
+}
+
+header div.hero {
+    position: absolute;
+    width: 62%;
+    top: 150px;
+    left: 30%;
+    color: #fff;
+}
+
+header div.hero span {
+    display: inline-block;
+    font-weight: 500;
+    color: #fbe2c2;
+}
+
+header a.btn {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #ffd698;
+    border: 1px solid #ffd698;
+    padding: 4px 15px;
+    transition: background .5s;
+}
+
+a.btn:hover {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+/*Navitation*/
+
+nav {
+    background-color: rgba(0, 0, 0, .15);
+/*    position: relative;*/
+    position: fixed;
+    width: 100%;
+    padding: 0px 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+nav::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav a.mobile-menu {
+    width: 32px;
+    height: 32px;
+    background: url(../images/menu.svg) no-repeat 0 0;
+    background-size: contain;
+    position: absolute;
+    top: 18px;
+    right: 4%;
+    margin-left: -16px;
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+/*    padding-left: 300px;*/
+    float: right;
+}
+
+/*
+nav ul li:hover {
+    background-color: rgba(0, 0, 0, .15);
+}
+*/
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 15px 40px 10px 20px;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+nav ul li a:visited {
+    color: #ffff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffd698;
+    /* color: #ff9900; */
+    transition: .5s ease-in;
+    background-color: rgba(192,192,192,0.1);
+}
+
+ul li a.active {
+    color: #ffd698 !important;
+    text-decoration: underline;
+}
+
+
+nav.scrolled {
+  background-color: #000 !important;
+  transition: background-color 200ms linear;
+}
+
+
+
+
+/*section background colors */
+
+#welcomeContainer {
+    background-color: rgb(225, 230, 236);
+}
+
+#aboutContainer {
+    background-color: rgb(87, 101, 113);
+}
+
+#serviceContainer {
+    background-color: rgb(206, 209, 216);
+}
+
+#contactContainer {
+    background-color: rgb(104, 121, 139);
+}
+
+.welcome-text {
+    text-align: center;
+}
+
+
+/* section */
+
+#welcome-content,
+#about-content,
+/*#service-content,*/
+
+#contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 90px 10px;
+}
+
+#service-content {
+    padding: 90px 0;
+}
+
+/* section welcome */
+
+#welcomeContainer {
+    background-image: url(../images/hair_style_welcom-back.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 350px;
+}
+
+#welcome-content p {
+    padding-left: 35%;
+}
+
+#welcome-content h2 {
+    color: rgb(87, 101, 113);
+}
+
+
+/* section - about */
+
+div.abt-content h2 {
+    color: rgb(239, 244, 249);
+}
+
+section .our-story {
+    float: left;
+    width: 65%;
+    margin-right: 2%;
+    color: rgb(239, 244, 249);
+}
+
+#aboutContainer {
+    background-image: url(../images/team-side.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 35%;
+}
+
+section .abt-content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section #our-team-bx {
+    background-color: rgb(239, 244, 249);
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 5px;
+    transition: background .9s;
+
+}
+
+section #our-team-bx:hover {
+    background-color: rgb(104, 121, 139);
+}
+
+section a.team-link {
+    font-family: 'Cinzel', serif;
+    color: rgb(43, 51, 62);
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+}
+
+section a.team-link:hover {
+    color: #fff;
+}
+
+/* section service */
+
+.services:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#service-content h2 {
+    color: rgb(87, 101, 113);
+}
+
+section .service-bx {
+    /*    width: 24.73%;*/
+    width: 25%;
+    margin: -3px 0;
+    /*    display: inline-block;*/
+    float: left;
+    cursor: pointer;
+    /* relative position for text inside the image - for middle class */
+    position: relative;
+}
+
+/* Image Hover Overlay */
+section .service-bx .porImg {
+    max-width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.service-bx:hover .porImg {
+  opacity: 0.3;
+}
+
+.service-bx:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  font-family: 'Cinzel', serif;
+  background-color: rgb(239, 244, 249);
+  color: rgb(43, 51, 62);
+  font-size: .9em;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+/* End of image hover Overlay */
+
+
+section .btn-bookOn {
+    text-align: center;
+    padding-top: 80px;
+}
+
+section .btn-bookOn .btn {
+    font-family: 'Cinzel', serif;
+    background-color: rgb(43, 51, 62);
+    width: 140px;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background .9s;
+}
+
+section .btn-bookOn .btn:hover {
+    background: rgb(239, 244, 249)
+}
+
+section .btn-bookOn .btn a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+section .btn-bookOn .btn a:hover {
+    color: rgb(43, 51, 62);
+}
+
+
+/* contact */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    font-family: 'Cinzel', serif;
+    background-color: rgb(239, 244, 249);
+    color: rgb(43, 51, 62);
+    font-size: 1em;
+    font-weight: 500;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background .9s;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(43, 51, 62);
+    color: #fff;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    */
+}
+
+.cont-intro {
+    color: rgb(239, 244, 249)
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media (max-width: 600px) {
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/*Footer*/
+
+footer {
+    font-size: .8em;
+    margin: 40px;
+    color: #999;
+}
+
+footer .content {
+    display: inline;
+}
+
+footer a {
+    margin-left: 30px;
+    color: rgb(239, 244, 249);
+}
+
+footer a:visited {
+    color: #777;
+}
+
+footer a:hover {
+    color: rgb(239, 244, 249);
+}
+
+/* back to top */
+#back-to-top {
+    position: fixed;
+    opacity: .6;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 85px;
+    background: rgb(87, 101, 113);
+    color: rgb(239, 244, 249);
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 90px;
+}
+
+#back-to-top:hover{
+  color: white;
+  opacity: .9;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        height: 420px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner1280.jpg) no-repeat left center;
+        background-size: 100% contain;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+     nav ul {
+    padding-left: 220px;
+    }
+    nav ul li a {
+    padding: 15px 20px 10px 17px;
+    font-size: 1em;
+}
+    #welcomeContainer {
+        background-size: 300px;
+        background-position: left center;
+    }
+    section .our-story {
+        width: 60%;
+    }
+    #aboutContainer {
+        background-position: center right;
+        background-size: 40%;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 2em;
+    }
+    #welcomeContainer {
+        background-size: 290px;
+        background-position: left center;
+    }
+       nav ul {
+    padding-left: 180px;
+    }
+    nav ul li a {
+    padding: 15px 15px 10px 15px;
+    font-size: 1em;
+    }
+    section .our-story {
+        width: 100%;
+    }
+    #aboutContainer {
+        background-position: bottom left;
+        background-size: 50%;
+    }
+    section #our-team-bx {
+        width: 150px;
+        margin-right: 10%;
+        margin-top: 10%;
+
+
+    }
+    section .service-bx {
+        width: 25%;
+    }
+
+}
+
+@media screen and (max-width: 725px) {
+
+    nav {
+        padding: 50px 0px 20px 0px;
+        background-color: rgb(43, 51, 62);
+        height: 0px;
+        overflow: hidden;
+    }
+    nav a.mobile-menu {
+        display: block;
+    }
+    nav ul {
+        float: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        float: none;
+        margin-top: 25px;
+    }
+
+
+    nav ul li a {
+        width: auto;
+        display: block;
+        margin: 8px 10px;
+        padding: 6px 5px 6px 5px;
+        border-bottom: 1px solid rgba(255, 255, 255, .25);
+    }
+    #welcomeContainer {
+        background-size: 220px;
+    }
+    section .our-story {
+        width: 100%;
+    }
+    #aboutContainer {
+        background-position: bottom left;
+        background-size: 50%;
+    }
+    section #our-team-bx {
+        width: 150px;
+        margin-right: 10%;
+        margin-top: 10%;
+    }
+    section .service-bx {
+    width: 33.33%;
+    }
+    section .services:after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+}
+
+@media screen and (max-width: 625px){
+    header div.hero {
+    width: 75%;
+    top: 150px;
+    left: 20%;
+    }
+    #aboutContainer {
+        background-size: 60%;
+        background-position: bottom center;
+        padding-bottom: 150px;
+    }
+    section #our-team-bx{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 525px){
+     header div.hero {
+    width: 100%;
+    top: 150px;
+    left: 2%;
+    }
+
+    #welcomeContainer {
+        background-size: 290px;
+        padding-bottom: 200px;
+        background-position: bottom center;
+    }
+    #welcome-content p {
+    padding-left: 0;
+    }
+    section .service-bx {
+    width: 50%;
+    }
+     #aboutContainer {
+        background-size: 80%;
+        background-position: bottom center;
+        padding-bottom: 150px;
+    }
+
+}
